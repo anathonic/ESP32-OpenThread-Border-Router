@@ -115,5 +115,5 @@ udpsockclient send <IP_ADDR> <PORT> hello
 
 Poniżej screenshot z udanej komunikacji pomiędzy Leaderem, a Routerem:
 
-![CLI UDP](images/cli_udp.png)
+![CLI UDP](img/cli_udp.png)
 
