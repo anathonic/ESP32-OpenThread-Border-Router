@@ -110,7 +110,31 @@ udpsockserver send <IP_ADDR> <PORT> hello
 oraz z clienta:
 ```sh
 udpsockclient send <IP_ADDR> <PORT> hello
-```     
+```
+
+### Komunikacja TCP pomiędzy CLI:
+Na pierwszym cli tworzymy serwer oraz bindujemy wybrany przez nas port:
+
+```sh
+tcpsockserver open
+tcpsockserver bind :: <PORT>
+```
+  
+Następnie na drugim CLI:
+```sh
+tcpsockclient open
+tcpsockclient connect <IP_ADDR> <PORT>
+```
+
+Aby wysłać wiadomość jako serwer:
+```sh
+tcpsockserver send hello
+```
+
+Aby wysłać wiadomość jako serwer:
+```sh
+tcpsockclient send hello
+```
 
 
 Poniżej screenshot z udanej komunikacji pomiędzy Leaderem, a Routerem:
