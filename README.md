@@ -131,7 +131,7 @@ Aby wysłać wiadomość jako serwer:
 tcpsockserver send hello
 ```
 
-Aby wysłać wiadomość jako serwer:
+Aby wysłać wiadomość jako client:
 ```sh
 tcpsockclient send hello
 ```
